@@ -18,7 +18,7 @@ function Home() {
         </p>
 
         <div className="buttonDiv">
-          <NavLink to="/action">
+          <NavLink to="/look">
             <Button className="actionBtn" variant="outline-light" size="lg">
               TAKE A LOOK{" "}
             </Button>

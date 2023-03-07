@@ -70,7 +70,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/action" element={<Action />} />
+        <Route path="/look" element={<Action />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       {/* </div> */}

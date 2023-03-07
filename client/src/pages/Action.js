@@ -83,11 +83,11 @@ export default function Action(props) {
   return (
     <div className="actionBG">
       {/* Stack the columns on mobile by making one full-width and the other half-width */}
-      <Container className="container fluid">
-        <Row className="rowContainer ">
-          <Col className="leftCol" xs={12} md={12} lg={8}>
+      <Container>
+        <Row>
+          <Col className="d-flex justify-content-center" xs={12} md={12} lg={8}>
             <figure class="image">
-              <div className="imgDiv">
+              <div className="w-50 m-auto">
                 {!image && error && <div class="errorDiv">Error: {error}</div>}
                 {!image && loading && (
                   <div className="spinner-border text-info" role="status"></div>

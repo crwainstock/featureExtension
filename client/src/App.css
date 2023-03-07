@@ -33,6 +33,7 @@ header a {
 
 /* HOME.CSS */
 
+/* Background image */
 .backgroundDiv {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("./images/peacockfeather.jpg");
@@ -44,38 +45,27 @@ header a {
   padding-top: 15vh;
   color: whitesmoke;
 }
-
+/* Content in middle of home page */
 .backgroundDiv > h1 {
   text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
     0px 0px 20px #b393d3;
   padding-top: 10%;
   padding-bottom: 2%;
 }
-
 .backgroundDiv > .lead {
   padding: 0 5% 2% 5%;
 
   font-weight: 450;
 }
-
+/* CTA Button */
 .actionBtn {
   color: whitesmoke;
   border-color: whitesmoke;
   background-color: transparent;
 }
-
 .actionBtn:hover {
   color: #553c9a;
 }
-
-/* Changed Bootstrap default hover settings  */
-/* .actionBtn:hover,
-.actionBtn:focus {
-  color: whitesmoke !important;
-  background-color: transparent !important;
-  border-color: whitesmoke !important;
-  border-width: 0.2rem;
-} */
 
 /*ABOUT.CSS*/
 

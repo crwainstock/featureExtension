@@ -1,51 +1,47 @@
+/* Background image */
 .actionBG {
-	background-image: linear-gradient(
-			rgba(241, 239, 239, 0.9),
-			rgba(241, 239, 239, 0.7)
-		),
-		url('../images/peacockfeather.jpg');
-	background-size: cover;
-	/* background-size: 100%; */
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 200vh;
-	/* width: 100%; */
-	min-width: auto;
-	text-align: center;
-	/* display: flex;
-	align-items: center; */
-	/* margin-top: 0px !important; */
-	color: black;
-	/* z-index: index -2; */
+  background-image: linear-gradient(
+      rgba(241, 239, 239, 0.9),
+      rgba(241, 239, 239, 0.7)
+    ),
+    url("../images/peacockfeather.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200vh;
+  min-width: auto;
+  text-align: center;
+  color: black;
 }
 
-@media (min-width: 992px) {
-	.actionBG {
-		margin-top: 0vh;
-		height: 100vh;
-		min-width: auto;
-	}
-}
+/* @media (min-width: 992px) {
+  .actionBG {
+    margin-top: 0vh;
+    height: 100vh;
+    min-width: auto;
+  }
+} */
 
-.rowContainer {
-	padding-top: 25vh !important;
+/* .rowContainer {
+  padding-top: 25vh !important;
 
-	margin-right: 0;
-}
+  margin-right: 0;
+} */
 
 /* LEFT COLUMN */
 
-.leftCol {
-	display: flex;
-	justify-content: center;
-}
-
+/* .leftCol {
+  display: flex;
+  justify-content: center;
+} */
+/* 
 .imgDiv {
-	height: 60vh;
-	display: flex;
-	/* align-items: center; */
-	justify-content: flex-end;
-}
+  height: 60vh;
+  display: flex;
+  /* align-items: center; */
+/* justify-content: flex-end;
+} */
+*/
 
 /* @media (max-width: 790px) {
 	.imgDiv {
@@ -55,17 +51,17 @@
 
 /*Error message*/
 .errorDiv {
-	text-align: center;
-	color: red;
-	font-weight: 800;
-	font-size: 3rem;
+  text-align: center;
+  color: red;
+  font-weight: 800;
+  font-size: 3rem;
 }
 
 /*Loading spinner*/
 .spinner-border {
-	width: 5rem;
-	height: 5rem;
-	margin-top: 10vh;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 10vh;
 }
 
 /* .defaultImg {
@@ -74,106 +70,106 @@
 
 /*Section for default image and its speech bubble*/
 .image .speechBubble {
-	position: absolute;
-	z-index: 1;
-	top: 30%;
-	bottom: 30%;
-	left: 1%;
-	padding-top: 1.5vh;
-	color: black;
-	font-weight: 420;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  bottom: 30%;
+  left: 1%;
+  padding-top: 1.5vh;
+  color: black;
+  font-weight: 420;
 }
 
 @media (min-width: 280px) and (max-width: 390px) {
-	.image .speechBubble {
-		width: 90%;
-		height: 40%;
-		position: absolute;
-		z-index: 2;
-		left: -12%;
-		top: 60%;
-		bottom: 10%;
-		left: 1%;
-	}
+  .image .speechBubble {
+    width: 90%;
+    height: 40%;
+    position: absolute;
+    z-index: 2;
+    left: -12%;
+    top: 60%;
+    bottom: 10%;
+    left: 1%;
+  }
 }
 
 @media (min-width: 391px) and (max-width: 790px) {
-	.image .speechBubble {
-		width: 80%;
-		height: 35%;
-		position: absolute;
-		z-index: 2;
-		left: -12%;
-		top: 60%;
-		bottom: 10%;
-		left: 1%;
-	}
+  .image .speechBubble {
+    width: 80%;
+    height: 35%;
+    position: absolute;
+    z-index: 2;
+    left: -12%;
+    top: 60%;
+    bottom: 10%;
+    left: 1%;
+  }
 }
 
 .image .speechBubble > p {
-	padding-top: 1.7vh;
+  padding-top: 1.7vh;
 }
 
 @media (min-width: 280px) and (max-width: 360px) {
-	.defaultImg {
-		height: 70%;
-	}
+  .defaultImg {
+    height: 70%;
+  }
 }
 
 @media (min-width: 361px) and (max-width: 500px) {
-	.defaultImg {
-		height: 80%;
-	}
+  .defaultImg {
+    height: 80%;
+  }
 }
 
 /*Section for random images*/
 #randomImg {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .pixabayLogo {
-	width: 1.8vw;
+  width: 1.8vw;
 }
 
 .box3 {
-	width: 18vw;
-	height: 45vh;
-	margin: 50px auto;
-	border-radius: 15px;
-	background: #14c8cc;
-	color: black;
-	padding: 1.5vw 1vw;
-	text-align: center;
-	font-size: medium;
-	position: relative;
+  width: 18vw;
+  height: 45vh;
+  margin: 50px auto;
+  border-radius: 15px;
+  background: #14c8cc;
+  color: black;
+  padding: 1.5vw 1vw;
+  text-align: center;
+  font-size: medium;
+  position: relative;
 }
 
 /* speech bubble */
 
 .speechBubble:before {
-	content: '';
-	width: 0px;
-	height: 0px;
-	position: absolute;
-	border-left: 15px solid #14c8cc;
-	border-right: 15px solid transparent;
-	border-top: 15px solid #14c8cc;
-	border-bottom: 15px solid transparent;
-	right: -16px;
-	top: 0px;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 15px solid #14c8cc;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #14c8cc;
+  border-bottom: 15px solid transparent;
+  right: -16px;
+  top: 0px;
 }
 
 @media (max-width: 790px) {
-	.speechBubble:before {
-		border-left: 10px solid transparent;
-		border-right: 10px solid transparent;
-		border-top: 10px solid transparent;
-		border-bottom: 10px solid #14c8cc;
-		right: 50%;
-		top: -18px;
-	}
+  .speechBubble:before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #14c8cc;
+    right: 50%;
+    top: -18px;
+  }
 }
 
 /* RIGHT COLUMN */
@@ -181,16 +177,16 @@
 /*Box7container with animal choices */
 
 .choiceContainer {
-	padding: 3rem;
-	height: 60vh;
-	background: rgba(255, 255, 255, 0.1);
-	position: relative;
-	border-radius: 20px;
-	box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 10px 10px;
-	margin-top: 0;
-	text-align: center;
-	width: 65%;
-	/* 
+  padding: 3rem;
+  height: 60vh;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 10px 10px;
+  margin-top: 0;
+  text-align: center;
+  width: 65%;
+  /* 
 	/createmediaqueriesforresponsiveness/: ;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -199,83 +195,83 @@
 }
 
 @media (min-width: 280px) and (max-width: 374px) {
-	.choiceContainer {
-		margin-top: 65%;
-		height: 65vh;
-	}
+  .choiceContainer {
+    margin-top: 65%;
+    height: 65vh;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 990px) {
-	.choiceContainer {
-		margin-top: 45%;
-		height: 55vh;
-	}
+  .choiceContainer {
+    margin-top: 45%;
+    height: 55vh;
+  }
 }
 
 .choiceBtn {
-	padding-bottom: 3vh;
-	color: black;
-	font-size: larger;
+  padding-bottom: 3vh;
+  color: black;
+  font-size: larger;
 }
 
 .choiceBtn:hover,
 .choiceBtn:focus {
-	border-color: transparent !important;
+  border-color: transparent !important;
 }
 
 .choiceBtn > img {
-	width: 3.3vw;
-	padding-left: 0.5vw;
+  width: 3.3vw;
+  padding-left: 0.5vw;
 }
 
 @media (max-width: 990px) {
-	.choiceBtn > img {
-		width: 7vw;
-		padding-left: 0.5vw;
-	}
+  .choiceBtn > img {
+    width: 7vw;
+    padding-left: 0.5vw;
+  }
 }
 
 label {
-	margin-right: 2vw;
-	font-size: larger;
+  margin-right: 2vw;
+  font-size: larger;
 }
 
 .resetBtn {
-	margin-top: 6vh;
-	background-color: #14c8cc !important;
-	color: black;
-	box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px 2px;
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	right: -20%;
-	transform: translate(-50%);
-	font-weight: 550;
+  margin-top: 6vh;
+  background-color: #14c8cc !important;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 2px 2px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  right: -20%;
+  transform: translate(-50%);
+  font-weight: 550;
 
-	-webkit-transform: translate(-50%);
-	-moz-transform: translate(-50%);
-	-ms-transform: translate(-50%);
-	-o-transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
 }
 
 /* FILTERS */
 
 .catFilter {
-	filter: grayscale(85%) blur(1.5px) opacity(85%);
-	-webkit-filter: grayscale(85%) blur(1.5px) opacity(85%);
+  filter: grayscale(85%) blur(1.5px) opacity(85%);
+  -webkit-filter: grayscale(85%) blur(1.5px) opacity(85%);
 }
 
 .cowFilter {
-	filter: sepia(100%) hue-rotate(345deg) saturate(900%);
-	-webkit-filter: sepia(100%) hue-rotate(345deg) saturate(900%);
+  filter: sepia(100%) hue-rotate(345deg) saturate(900%);
+  -webkit-filter: sepia(100%) hue-rotate(345deg) saturate(900%);
 }
 
 .whaleFilter {
-	filter: grayscale(100%) brightness(0.8);
-	-webkit-filter: grayscale(100%) brightness(0.8);
+  filter: grayscale(100%) brightness(0.8);
+  -webkit-filter: grayscale(100%) brightness(0.8);
 }
 
 .beeFilter {
-	filter: sepia(100%) hue-rotate(190deg) saturate(900%);
-	-webkit-filter: sepia(100%) hue-rotate(190deg) saturate(900%);
+  filter: sepia(100%) hue-rotate(190deg) saturate(900%);
+  -webkit-filter: sepia(100%) hue-rotate(190deg) saturate(900%);
 }

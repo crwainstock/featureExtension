@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./action.css";
+import ImageSlider from "../components/ImageSlider";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -32,7 +33,7 @@ export default function Action() {
   const handleFilter = (e) => {
     setAnimal(e.target.value);
     changeColor(e.target.value);
-    console.log(e.target.value); // undefined...not sure why
+    console.log(filterClass); // undefined...not sure why
   };
 
   const changeColor = (animal) => {
@@ -188,6 +189,7 @@ export default function Action() {
           </Col>
         </Row>
       </Container>
+      <ImageSlider />
     </div>
   );
 }

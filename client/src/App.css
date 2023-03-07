@@ -1,9 +1,11 @@
 .App {
   text-align: center;
 }
-
+/* HEADER STYLING */
 header {
-  background-image: radial-gradient(circle, #14c8cc, #b393d3, #553c9a);
+  background-color: #efe9d5;
+
+  /* background-image: radial-gradient(circle, #14c8cc, #b393d3, #553c9a); */
   /* ANOTHER RADIANT OPTION: background-image: linear-gradient(to right, #553c9a, #14c8cc, #b393d3); */
 }
 header h5 {
@@ -11,21 +13,21 @@ header h5 {
   margin: 0;
 }
 
-h5:hover {
+header h5:hover {
   font-weight: 700;
   font-size: larger;
-  color: whitesmoke;
+  color: #b393d3;
   border-style: none;
 }
 
 header a {
   text-decoration: none;
-  color: #efe9d5;
+  color: #553c9a;
 }
 
 .active-link {
   /* font-size: larger; */
-  color: whitesmoke;
+  color: #553c9a;
   border-style: none;
 }
 

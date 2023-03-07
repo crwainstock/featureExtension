@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 function Home() {
   return (
     <>
-      <div className="backgroundDiv bg-image">
+      <div className="backgroundDiv bg-image pt-0">
         <h1 className="display-1 fw-bold">AniColors</h1>
 
         <p className="lead">

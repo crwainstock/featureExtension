@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 export default function Header() {
   return (
-    <header className="pt-2 pb-2">
+    <header className="pt-1.5 pb-1.5">
       <Navbar className="row">
         {/* Work on this styling a bit more -- center on mobile */}
         <Nav className="col d-flex justify-content-around">

@@ -4,7 +4,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
-      <footer>
+      <footer className="mt-4">
         <h6>AniColors</h6>
         <p>Developed by Tati & Crystal</p>
       </footer>

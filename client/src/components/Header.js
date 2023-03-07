@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 export default function Header() {
   return (
-    <header>
+    <header className="pt-2 pb-2">
       <Navbar>
         <Nav className="d-sm-justify-content-center">
           <NavLink

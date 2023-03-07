@@ -85,58 +85,65 @@ export default function Action(props) {
       {/* Stack the columns on mobile by making one full-width and the other half-width */}
       <Container>
         <Row>
-          <Col className="d-flex justify-content-center" xs={12} md={12} lg={8}>
-            <figure class="image">
-              <div className="w-50 m-auto">
-                {!image && error && <div class="errorDiv">Error: {error}</div>}
-                {!image && loading && (
-                  <div className="spinner-border text-info" role="status"></div>
-                )}
-                {!image && !error && !loading && (
-                  <>
-                    <figcaption class="box3 speechBubble">
-                      <h3>
-                        Hi, I'm Pablita! <br />
-                        I'm here to help
-                      </h3>
-                      <p className="lead">
-                        Click on me to see a new image and then on the name of a
-                        non-human friend to see through their eyes. Click again
-                        on the image to see another one. <br />
-                        And if you need me back just click on my button!
-                      </p>
-                    </figcaption>
+          <Col className="mt-5" xs={12} md={12} lg={8}>
+            <Row>
+              <figure className="image">
+                <div className="w-50 m-auto mt-5">
+                  {!image && error && (
+                    <div class="errorDiv">Error: {error}</div>
+                  )}
+                  {!image && loading && (
+                    <div
+                      className="spinner-border text-info"
+                      role="status"
+                    ></div>
+                  )}
+                  {!image && !error && !loading && (
+                    <div>
+                      <figcaption class="box3 speechBubble">
+                        <h3>
+                          Hi, I'm Pablita! <br />
+                          I'm here to help
+                        </h3>
+                        <p className="lead">
+                          Click on me to see a new image and then on the name of
+                          a non-human friend to see through their eyes. Click
+                          again on the image to see another one. <br />
+                          And if you need me back just click on my button!
+                        </p>
+                      </figcaption>
 
-                    <img
-                      className="defaultImg img-fluid"
-                      alt="Pablita, the jumping spider"
-                      src={defaultImg}
-                      onClick={fetchImage}
-                    />
-                  </>
-                )}
-
-                {image && (
-                  <Figure>
-                    <Figure.Image
-                      className={filterClass}
-                      id="randomImg"
-                      alt="Random img from Pixabay API"
-                      src={image}
-                      onClick={fetchImage}
-                    />
-                    <Figure.Caption className="pixaCaption">
-                      <span>Images fetched from Pixabay API. </span>
                       <img
-                        className="pixabayLogo"
-                        alt="Pixabay logo"
-                        src={pixabayLogo}
+                        className="w-50 rounded float-end"
+                        alt="Pablita, the jumping spider"
+                        src={defaultImg}
+                        onClick={fetchImage}
                       />
-                    </Figure.Caption>
-                  </Figure>
-                )}
-              </div>
-            </figure>
+                    </div>
+                  )}
+                  {/* 
+                  {image && (
+                    <Figure>
+                      <Figure.Image
+                        className={filterClass}
+                        id="randomImg"
+                        alt="Random img from Pixabay API"
+                        src={image}
+                        onClick={fetchImage}
+                      />
+                      <Figure.Caption className="pixaCaption">
+                        <span>Images fetched from Pixabay API. </span>
+                        <img
+                          className="pixabayLogo"
+                          alt="Pixabay logo"
+                          src={pixabayLogo}
+                        />
+                      </Figure.Caption>
+                    </Figure>
+                  )} */}
+                </div>
+              </figure>
+            </Row>
             <br />
           </Col>
           <Col className="rigthCol" xs={12} md={12} lg={4}>

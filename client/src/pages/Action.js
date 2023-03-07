@@ -139,7 +139,7 @@ export default function Action(props) {
 
             <br />
           </Col>
-          <Col className="rigthCol" xs={12} md={12} lg={4}>
+          <Col className="mt-5" xs={12} md={12} lg={4}>
             <Container
               fluid
               className="choiceContainer {

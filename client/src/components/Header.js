@@ -15,7 +15,7 @@ export default function Header() {
             className={({ isActive }) => (isActive ? "active-link" : null)}
           >
             <Nav.Item>
-              <h5>Home</h5>
+              <h5 className="p-2">Home</h5>
             </Nav.Item>
           </NavLink>
           <NavLink
@@ -23,7 +23,7 @@ export default function Header() {
             className={({ isActive }) => (isActive ? "active-link" : null)}
           >
             <Nav.Item>
-              <h5>LOOK</h5>
+              <h5 className="p-2">LOOK</h5>
             </Nav.Item>
           </NavLink>
           <NavLink
@@ -31,7 +31,7 @@ export default function Header() {
             className={({ isActive }) => (isActive ? "active-link" : null)}
           >
             <Nav.Item>
-              <h5>About</h5>
+              <h5 className="p-2">About</h5>
             </Nav.Item>
           </NavLink>
         </Nav>

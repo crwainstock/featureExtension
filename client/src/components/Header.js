@@ -11,19 +11,25 @@ export default function Header() {
           to="/"
           className={({ isActive }) => (isActive ? "active-link" : null)}
         >
-          Home
+          <Nav.Item>
+            <h5>Home</h5>
+          </Nav.Item>
         </NavLink>
         <NavLink
           to="/look"
           className={({ isActive }) => (isActive ? "active-link" : null)}
         >
-          LOOK
+          <Nav.Item>
+            <h5>LOOK</h5>
+          </Nav.Item>
         </NavLink>
         <NavLink
           to="/about"
           className={({ isActive }) => (isActive ? "active-link" : null)}
         >
-          About
+          <Nav.Item>
+            <h5>About</h5>
+          </Nav.Item>
         </NavLink>
       </Nav>
     </header>

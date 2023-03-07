@@ -61,16 +61,21 @@ header a {
 .actionBtn {
   color: whitesmoke;
   border-color: whitesmoke;
+  background-color: transparent;
+}
+
+.actionBtn:hover {
+  color: #553c9a;
 }
 
 /* Changed Bootstrap default hover settings  */
-.actionBtn:hover,
+/* .actionBtn:hover,
 .actionBtn:focus {
   color: whitesmoke !important;
   background-color: transparent !important;
   border-color: whitesmoke !important;
   border-width: 0.2rem;
-}
+} */
 
 /*ABOUT.CSS*/
 

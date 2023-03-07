@@ -8,7 +8,8 @@ export default function Header() {
   return (
     <header className="pt-2 pb-2">
       <Navbar className="row">
-        <Nav className="col-sm-flex justify-content-center">
+        {/* Work on this styling a bit more -- center on mobile */}
+        <Nav className="col d-flex justify-content-around">
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? "active-link" : null)}

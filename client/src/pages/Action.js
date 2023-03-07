@@ -68,26 +68,7 @@ export default function Action() {
                   </div>
                 </div>
               )}
-              {/* 
-                  {image && (
-                    <Figure>
-                      <Figure.Image
-                        className={filterClass}
-                        id="randomImg"
-                        alt="Random img from Pixabay API"
-                        src={image}
-                        onClick={fetchImage}
-                      />
-                      <Figure.Caption className="pixaCaption">
-                        <span>Images fetched from Pixabay API. </span>
-                        <img
-                          className="pixabayLogo"
-                          alt="Pixabay logo"
-                          src={pixabayLogo}
-                        />
-                      </Figure.Caption>
-                    </Figure>
-                  )} */}
+              {/* Code here to render specific animal images upon click of icons */}
             </div>
 
             <br />

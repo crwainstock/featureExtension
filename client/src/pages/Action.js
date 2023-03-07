@@ -33,7 +33,7 @@ export default function Action() {
       {/* Stack the columns on mobile by making one full-width and the other half-width */}
       <Container className="pb-5">
         <Row className="pb-5">
-          <Col className="mt-5">
+          <Col className="mt-lg-5 mt-md-2">
             <div className="w-100 m-auto mt-5">
               {!image && error && <div class="errorDiv">Error: {error}</div>}
               {!image && loading && (
@@ -84,7 +84,7 @@ export default function Action() {
 
             <br />
           </Col>
-          <Col className="mt-5 col-lg-4 col-md-12 col-12">
+          <Col className="mt-lg-5 col-lg-4 mt-md-3 col-md-12 col-12">
             <div className="col ">
               <div className="col mb-3 justify-content-center">
                 <Button

@@ -5,10 +5,12 @@
 header {
   background-image: radial-gradient(circle, #14c8cc, #b393d3, #553c9a);
   /* ANOTHER RADIANT OPTION: background-image: linear-gradient(to right, #553c9a, #14c8cc, #b393d3); */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-
-header a {
-  text-decoration: none;
+header h5 {
+  padding: 1rem;
+  margin: 0;
 }
 
 h5:hover {
@@ -16,6 +18,10 @@ h5:hover {
   font-size: larger;
   color: whitesmoke;
   border-style: none;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .active-link {

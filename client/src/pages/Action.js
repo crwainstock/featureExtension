@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 import defaultImg from "../images/spider_eyes.jpg";
 import catImage from "../images/icons/cat.png";
@@ -13,10 +12,16 @@ import cowImage from "../images/icons/cow.png";
 import whaleImage from "../images/icons/whale.png";
 import beeImage from "../images/icons/bee.png";
 
+import bee from "../images/animalVision/bee.png";
+import cat from "../images/animalVision/cat.png";
+import cow from "../images/animalVision/cow.png";
+import human from "../images/animalVision/human.png";
+import whale from "../images/animalVision/whale.png";
+
 export default function Action() {
   const [animal, setAnimal] = useState(null);
-  const [error, setError] = useState("");
   const [image, setImage] = useState(null);
+  const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   const backToDefImg = () => {
@@ -25,7 +30,10 @@ export default function Action() {
   };
 
   const handleFilter = () => {
-    console.log(animal); //returning null for everything -- revisit this.
+    //If animal = cat, use cat image
+    //If animal = whale, use whale image
+    //If animal = bee, use bee image
+    //If animal = cow, use cow image
   };
 
   return (
@@ -35,10 +43,10 @@ export default function Action() {
         <Row className="pb-5">
           <Col className="mt-lg-5 mt-md-2">
             <div className="w-100 m-auto mt-5">
-              {!image && error && <div class="errorDiv">Error: {error}</div>}
+              {/* {!image && error && <div class="errorDiv">Error: {error}</div>}
               {!image && loading && (
                 <div className="spinner-border text-info" role="status"></div>
-              )}
+              )} */}
               {!image && !error && !loading && (
                 <div className="row">
                   <div className="col-md-5 col-12 d-flex-justify-content-end">

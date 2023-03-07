@@ -5,8 +5,6 @@
 header {
   background-image: radial-gradient(circle, #14c8cc, #b393d3, #553c9a);
   /* ANOTHER RADIANT OPTION: background-image: linear-gradient(to right, #553c9a, #14c8cc, #b393d3); */
-  /* padding-top: 0.5rem;
-  padding-bottom: 0.5rem; */
 }
 header h5 {
   padding: 1rem;

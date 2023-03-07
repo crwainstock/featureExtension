@@ -7,8 +7,8 @@ import Navbar from "react-bootstrap/Navbar";
 export default function Header() {
   return (
     <header className="pt-2 pb-2">
-      <Navbar>
-        <Nav className="d-sm-justify-content-center">
+      <Navbar className="row">
+        <Nav className="col-sm-flex justify-content-center">
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? "active-link" : null)}

@@ -1,12 +1,13 @@
 import "./App.css";
 import React from "react";
 
+import Layout from "./components/Layout";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Action from "./pages/Action";
 import ErrorPage from "./pages/ErrorPage";
 
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   // 	useEffect(() => {
@@ -26,52 +27,13 @@ function App() {
 
   return (
     <div className="App">
-      <nav className="navbar fixed-top justify-content-end navbar-expand-lg navbar-light shadow p-3 mb-5">
-        {/* <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> */}
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <NavLink exact to="/">
-                <button type="button" className="btn bg-transparent navBtn">
-                  Home
-                </button>
-              </NavLink>
-            </li>
-            <li class="nav-item">
-              <NavLink to="/action">
-                <button type="button" className="btn bg-transparent navBtn">
-                  LOOK
-                </button>
-              </NavLink>
-            </li>
-            <li class="nav-item">
-              <NavLink to="/about">
-                <button type="button" className="btn bg-transparent navBtn">
-                  About
-                </button>
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      {/* <div className="test"> */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/look" element={<Action />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/look" element={<Action />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
       </Routes>
       {/* </div> */}
     </div>

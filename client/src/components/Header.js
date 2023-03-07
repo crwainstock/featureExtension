@@ -1,5 +1,7 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+import Nav from "react-bootstrap/Nav";
 
 export default function Header() {
   const activeStyle = {
@@ -10,26 +12,26 @@ export default function Header() {
 
   return (
     <header>
-      <nav>
+      <Nav>
         <NavLink
-          to="/host"
-          className={({ isActive }) => (isActive ? "active-link" : null)}
+          to="/"
+          className={({ isActive }) => (isActive ? activeStyle : null)}
         >
-          Host
+          Home
+        </NavLink>
+        <NavLink
+          to="/look"
+          className={({ isActive }) => (isActive ? activeStyle : null)}
+        >
+          LOOK
         </NavLink>
         <NavLink
           to="/about"
-          className={({ isActive }) => (isActive ? "active-link" : null)}
+          className={({ isActive }) => (isActive ? activeStyle : null)}
         >
           About
         </NavLink>
-        <NavLink
-          to="/vans"
-          className={({ isActive }) => (isActive ? "active-link" : null)}
-        >
-          Vans
-        </NavLink>
-      </nav>
+      </Nav>
     </header>
   );
 }

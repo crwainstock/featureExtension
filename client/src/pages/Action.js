@@ -85,63 +85,83 @@ export default function Action() {
             <br />
           </Col>
           <Col className="mt-5 col-lg-4 col-md-12 col-12">
-            <Container
-              fluid
-              className="choiceContainer {
-"
-            >
-              <ButtonGroup
-                className="btnGroup"
-                vertical
-                aria-label="Basic example"
-              >
+            <div className="col ">
+              <div className="col mb-3 justify-content-center">
                 <Button
-                  className="choiceBtn"
+                  className="choiceBtn mb-2"
                   variant="transparent"
                   onClick={handleFilter}
                   checked={animal === "cat"}
-                  value="cat"
+                  value="bee"
                 >
-                  Cat <img className="cat" alt="" src={catImage} />
+                  <div className="row">
+                    <div className="row">
+                      <h5 className="mb-0">Cat</h5>
+                    </div>
+                    <div className="row justify-content-center">
+                      <img className="w-25" alt="" src={catImage} />
+                    </div>
+                  </div>
                 </Button>
                 <Button
-                  className="choiceBtn"
+                  className="choiceBtn mb-2"
                   variant="transparent"
                   onClick={handleFilter}
                   checked={animal === "cow"}
-                  value="cow"
+                  value="bee"
                 >
-                  Cow <img className="cow" alt="" src={cowImage} />
+                  <div className="row">
+                    <div className="row">
+                      <h5 className="mb-0">Cow</h5>
+                    </div>
+                    <div className="row justify-content-center">
+                      <img className="w-25" alt="" src={cowImage} />
+                    </div>
+                  </div>
                 </Button>
                 <Button
-                  className="choiceBtn"
+                  className="choiceBtn mb-2"
                   variant="transparent"
                   onClick={handleFilter}
                   checked={animal === "whale"}
-                  value="whale"
+                  value="bee"
                 >
-                  Whale <img className="whale" alt="" src={whaleImage} />
+                  <div className="row">
+                    <div className="row">
+                      <h5 className="mb-0">Whale</h5>
+                    </div>
+                    <div className="row justify-content-center">
+                      <img className="w-25" alt="" src={whaleImage} />
+                    </div>
+                  </div>
                 </Button>
+
                 <Button
-                  className="choiceBtn"
+                  className="choiceBtn mb-2"
                   variant="transparent"
                   onClick={handleFilter}
                   checked={animal === "bee"}
                   value="bee"
                 >
-                  Bee <img className="bee" alt="" src={beeImage} />
+                  <div className="row">
+                    <div className="row">
+                      <h5 className="mb-0">Bee</h5>
+                    </div>
+                    <div className="row justify-content-center">
+                      <img className="w-25" alt="" src={beeImage} />
+                    </div>
+                  </div>
                 </Button>
-              </ButtonGroup>
-
+              </div>
               <Button
                 className="resetBtn"
                 variant="info"
                 size="lg"
                 onClick={backToDefImg}
               >
-                Come back Pablita!
+                Come back, Pablita!
               </Button>
-            </Container>
+            </div>
           </Col>
         </Row>
       </Container>

@@ -41,7 +41,7 @@ export default function Action() {
               )}
               {!image && !error && !loading && (
                 <div className="row">
-                  <div className="col-lg-5 col-12 d-flex-justify-content-end">
+                  <div className="col-md-5 col-12 d-flex-justify-content-end">
                     <h3>
                       Hi, I'm Pablita! <br />
                       I'm here to help
@@ -84,7 +84,7 @@ export default function Action() {
 
             <br />
           </Col>
-          <Col className="mt-5" xs={12} md={12} lg={4}>
+          <Col className="mt-5 col-lg-4 col-md-12 col-12">
             <Container
               fluid
               className="choiceContainer {

@@ -2,23 +2,13 @@
   text-align: center;
 }
 
-.navbar {
+header {
   background-image: radial-gradient(circle, #14c8cc, #b393d3, #553c9a);
   /* ANOTHER RADIANT OPTION: background-image: linear-gradient(to right, #553c9a, #14c8cc, #b393d3); */
 }
 
-.navBtn {
-  color: whitesmoke;
-  font-weight: 500;
-}
-
-.navbar-toggler {
-  color: whitesmoke !important;
-  border-color: whitesmoke;
-}
-
-.navbar-toggler-icon {
-  color: whitesmoke !important;
+header a {
+  text-decoration: none;
 }
 
 h5:hover {

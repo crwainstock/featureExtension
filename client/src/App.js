@@ -1,4 +1,3 @@
-//import logo from './logo.svg';
 import "./App.css";
 import React from "react";
 
@@ -28,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar fixed-top justify-content-end navbar-expand-lg navbar-light shadow p-3 mb-5">
-        <button
+        {/* <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -38,7 +37,7 @@ function App() {
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">

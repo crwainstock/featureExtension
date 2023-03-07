@@ -20,25 +20,38 @@ import whale from "../images/animalVision/whale.png";
 
 export default function Action() {
   const [animal, setAnimal] = useState(null);
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState(null); //
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [filterClass, setFilterClass] = useState(null);
 
   const backToDefImg = () => {
-    setAnimal(null);
-    let backToDefImg = animal;
+    setImage(null);
   };
 
-  const handleFilter = () => {
-    //If animal = cat, use cat image
-    //If animal = whale, use whale image
-    //If animal = bee, use bee image
-    //If animal = cow, use cow image
+  const handleFilter = (e) => {
+    setAnimal(e.target.value);
+    changeColor(e.target.value);
+    console.log(e.target.value); // undefined...not sure why
+  };
+
+  const changeColor = (animal) => {
+    if (animal === "cat") {
+      setFilterClass("catFilter");
+    }
+    if (animal === "cow") {
+      setFilterClass("cowFilter");
+    }
+    if (animal === "whale") {
+      setFilterClass("whaleFilter");
+    }
+    if (animal === "bee") {
+      setFilterClass("beeFilter");
+    }
   };
 
   return (
     <div className="actionBG">
-      {/* Stack the columns on mobile by making one full-width and the other half-width */}
       <Container className="pb-5">
         <Row className="pb-5">
           <Col className="mt-lg-5 mt-md-2">
@@ -81,14 +94,19 @@ export default function Action() {
                   variant="transparent"
                   onClick={handleFilter}
                   checked={animal === "cat"}
-                  value="bee"
+                  value="cat"
                 >
                   <div className="row">
                     <div className="row">
                       <h5 className="mb-0">Cat</h5>
                     </div>
                     <div className="row justify-content-center">
-                      <img className="w-25" alt="" src={catImage} />
+                      <img
+                        className="w-25"
+                        alt="cat icon"
+                        value="cat"
+                        src={catImage}
+                      />
                     </div>
                   </div>
                 </Button>
@@ -97,14 +115,19 @@ export default function Action() {
                   variant="transparent"
                   onClick={handleFilter}
                   checked={animal === "cow"}
-                  value="bee"
+                  value="cow"
                 >
                   <div className="row">
                     <div className="row">
                       <h5 className="mb-0">Cow</h5>
                     </div>
                     <div className="row justify-content-center">
-                      <img className="w-25" alt="" src={cowImage} />
+                      <img
+                        className="w-25"
+                        alt="cow icon"
+                        value="cow"
+                        src={cowImage}
+                      />
                     </div>
                   </div>
                 </Button>
@@ -113,14 +136,19 @@ export default function Action() {
                   variant="transparent"
                   onClick={handleFilter}
                   checked={animal === "whale"}
-                  value="bee"
+                  value="whale"
                 >
                   <div className="row">
                     <div className="row">
                       <h5 className="mb-0">Whale</h5>
                     </div>
                     <div className="row justify-content-center">
-                      <img className="w-25" alt="" src={whaleImage} />
+                      <img
+                        className="w-25"
+                        alt="whale icon"
+                        value="whale"
+                        src={whaleImage}
+                      />
                     </div>
                   </div>
                 </Button>
@@ -137,7 +165,12 @@ export default function Action() {
                       <h5 className="mb-0">Bee</h5>
                     </div>
                     <div className="row justify-content-center">
-                      <img className="w-25" alt="" src={beeImage} />
+                      <img
+                        className="w-25"
+                        alt="bee icon"
+                        value="bee"
+                        src={beeImage}
+                      />
                     </div>
                   </div>
                 </Button>
@@ -147,6 +180,7 @@ export default function Action() {
                 variant="info"
                 size="lg"
                 onClick={backToDefImg}
+                value="default"
               >
                 Come back, Pablita!
               </Button>

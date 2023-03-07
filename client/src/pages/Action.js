@@ -86,42 +86,36 @@ export default function Action(props) {
       <Container>
         <Row>
           <Col className="mt-5" xs={12} md={12} lg={8}>
-            <Row>
-              <figure className="image">
-                <div className="w-50 m-auto mt-5">
-                  {!image && error && (
-                    <div class="errorDiv">Error: {error}</div>
-                  )}
-                  {!image && loading && (
-                    <div
-                      className="spinner-border text-info"
-                      role="status"
-                    ></div>
-                  )}
-                  {!image && !error && !loading && (
-                    <div>
-                      <figcaption class="box3 speechBubble">
-                        <h3>
-                          Hi, I'm Pablita! <br />
-                          I'm here to help
-                        </h3>
-                        <p className="lead">
-                          Click on me to see a new image and then on the name of
-                          a non-human friend to see through their eyes. Click
-                          again on the image to see another one. <br />
-                          And if you need me back just click on my button!
-                        </p>
-                      </figcaption>
-
-                      <img
-                        className="w-50 rounded float-end"
-                        alt="Pablita, the jumping spider"
-                        src={defaultImg}
-                        onClick={fetchImage}
-                      />
-                    </div>
-                  )}
-                  {/* 
+            <div className="w-100 m-auto mt-5">
+              {!image && error && <div class="errorDiv">Error: {error}</div>}
+              {!image && loading && (
+                <div className="spinner-border text-info" role="status"></div>
+              )}
+              {!image && !error && !loading && (
+                <div className="row">
+                  <div className="col-5 d-flex-justify-content-end">
+                    <h3>
+                      Hi, I'm Pablita! <br />
+                      I'm here to help
+                    </h3>
+                    <p className="lead">
+                      Click on me to see a new image and then on the name of a
+                      non-human friend to see through their eyes. Click again on
+                      the image to see another one. <br />
+                      And if you need me back just click on my button!
+                    </p>
+                  </div>
+                  <div className="col d-flex-justify-content-center">
+                    <img
+                      className="w-100 rounded float-center"
+                      alt="Pablita, the jumping spider"
+                      src={defaultImg}
+                      onClick={fetchImage}
+                    />
+                  </div>
+                </div>
+              )}
+              {/* 
                   {image && (
                     <Figure>
                       <Figure.Image
@@ -141,9 +135,8 @@ export default function Action(props) {
                       </Figure.Caption>
                     </Figure>
                   )} */}
-                </div>
-              </figure>
-            </Row>
+            </div>
+
             <br />
           </Col>
           <Col className="rigthCol" xs={12} md={12} lg={4}>

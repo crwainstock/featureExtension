@@ -83,8 +83,8 @@ export default function Action(props) {
   return (
     <div className="actionBG">
       {/* Stack the columns on mobile by making one full-width and the other half-width */}
-      <Container>
-        <Row>
+      <Container className="pb-5">
+        <Row className="pb-5">
           <Col className="mt-5" xs={12} md={12} lg={8}>
             <div className="w-100 m-auto mt-5">
               {!image && error && <div class="errorDiv">Error: {error}</div>}
@@ -98,16 +98,14 @@ export default function Action(props) {
                       Hi, I'm Pablita! <br />
                       I'm here to help
                     </h3>
-                    <p className="lead">
-                      Click on me to see a new image and then on the name of a
-                      non-human friend to see through their eyes. Click again on
-                      the image to see another one. <br />
-                      And if you need me back just click on my button!
+                    <p className="mt-4 fs-5">
+                      Click on a non-human friend on the right to see how they
+                      see! And if you need me back just click on my button!
                     </p>
                   </div>
                   <div className="col d-flex-justify-content-center">
                     <img
-                      className="w-100 rounded float-center"
+                      className="w-100 rounded float-center "
                       alt="Pablita, the jumping spider"
                       src={defaultImg}
                       onClick={fetchImage}

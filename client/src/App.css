@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #efe9d5;
 }
 /* HEADER STYLING */
 header {
@@ -29,6 +30,10 @@ header a {
   /* font-size: larger; */
   color: #553c9a;
   border-style: none;
+}
+
+footer {
+  background-color: #efe9d5;
 }
 
 /* HOME.CSS */

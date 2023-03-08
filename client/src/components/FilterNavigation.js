@@ -7,9 +7,9 @@ import beeImage from "../images/icons/bee.png";
 
 import Button from "react-bootstrap/Button";
 
-export default function FilterNavigation() {
+export default function FilterNavigation({ changeFilterCB }) {
   const [animal, setAnimal] = useState(null);
-  const [filterClass, setFilterClass] = useState(null);
+  const [filterClass, setFilterClass] = useState(null); //Need to send up to parent to be used in ImageSlider component
   //   const [image, setImage] = useState(null);
 
   //   const backToDefImg = () => {
@@ -18,9 +18,10 @@ export default function FilterNavigation() {
 
   const handleFilter = (e) => {
     setAnimal(e.target.value);
-    console.log(e.target);
+    // console.log(e.target);
     changeColor(e.target.value);
-    console.log(filterClass); // undefined...not sure why
+    console.log(filterClass); // Seems to be working
+    changeFilterCB(filterClass); // To send data to parent
   };
 
   const changeColor = (animal) => {
@@ -41,7 +42,7 @@ export default function FilterNavigation() {
   return (
     <div className="col-md-12 col-12">
       <div className="row ">
-        <div className="row mt-5 mb-3 justify-content-center border rounded border-3">
+        <div className="button-area row mt-3 mb-3 justify-content-center border rounded border-3">
           <Button
             className="col mb-2"
             variant="transparent"

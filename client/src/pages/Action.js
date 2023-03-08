@@ -26,6 +26,7 @@ export default function Action() {
 
   const handleFilter = (e) => {
     setAnimal(e.target.value);
+    console.log(e.target);
     changeColor(e.target.value);
     console.log(filterClass); // undefined...not sure why
   };
@@ -91,19 +92,8 @@ export default function Action() {
                   checked={animal === "cat"}
                   value="cat"
                 >
-                  <div className="row">
-                    <div className="row">
-                      <h5 className="mb-0">Cat</h5>
-                    </div>
-                    <div className="row justify-content-center">
-                      <img
-                        className="w-25"
-                        alt="cat icon"
-                        value="cat"
-                        src={catImage}
-                      />
-                    </div>
-                  </div>
+                  <h5 className="mb-0">Cat</h5>
+                  <img className="w-25" alt="cat icon" src={catImage} />
                 </Button>
                 <Button
                   className="choiceBtn mb-2"
@@ -112,19 +102,8 @@ export default function Action() {
                   checked={animal === "cow"}
                   value="cow"
                 >
-                  <div className="row">
-                    <div className="row">
-                      <h5 className="mb-0">Cow</h5>
-                    </div>
-                    <div className="row justify-content-center">
-                      <img
-                        className="w-25"
-                        alt="cow icon"
-                        value="cow"
-                        src={cowImage}
-                      />
-                    </div>
-                  </div>
+                  <h5 className="mb-0">Cow</h5>
+                  <img className="w-25" alt="cow icon" src={cowImage} />
                 </Button>
                 <Button
                   className="choiceBtn mb-2"
@@ -133,19 +112,8 @@ export default function Action() {
                   checked={animal === "whale"}
                   value="whale"
                 >
-                  <div className="row">
-                    <div className="row">
-                      <h5 className="mb-0">Whale</h5>
-                    </div>
-                    <div className="row justify-content-center">
-                      <img
-                        className="w-25"
-                        alt="whale icon"
-                        value="whale"
-                        src={whaleImage}
-                      />
-                    </div>
-                  </div>
+                  <h5 className="mb-0">Whale</h5>
+                  <img className="w-25" alt="whale icon" src={whaleImage} />
                 </Button>
 
                 <Button
@@ -155,19 +123,8 @@ export default function Action() {
                   checked={animal === "bee"}
                   value="bee"
                 >
-                  <div className="row">
-                    <div className="row">
-                      <h5 className="mb-0">Bee</h5>
-                    </div>
-                    <div className="row justify-content-center">
-                      <img
-                        className="w-25"
-                        alt="bee icon"
-                        value="bee"
-                        src={beeImage}
-                      />
-                    </div>
-                  </div>
+                  <h5 className="mb-0">Bee</h5>
+                  <img className="w-25" alt="bee icon" src={beeImage} />
                 </Button>
               </div>
               <Button

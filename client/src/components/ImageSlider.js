@@ -11,7 +11,7 @@ import cow from "../images/animalVision/cow.png";
 import human from "../images/animalVision/human.png";
 import whale from "../images/animalVision/whale.png";
 
-export default function ImageSlider({}) {
+export default function ImageSlider({ filterClass }) {
   const [animal, setAnimal] = useState(null);
 
   //Function to link clicking animal on Action page to animal here to render slider

@@ -12,6 +12,7 @@ import catImage from "../images/icons/cat.png";
 import cowImage from "../images/icons/cow.png";
 import whaleImage from "../images/icons/whale.png";
 import beeImage from "../images/icons/bee.png";
+import FilterNavigation from "../components/FilterNavigation";
 
 export default function Action() {
   const [animal, setAnimal] = useState(null);
@@ -48,98 +49,35 @@ export default function Action() {
 
   return (
     <div className="actionBG">
-      <Container className="pb-5">
+      <div className="container pb-5">
+        <FilterNavigation />
         <Row className="pb-5">
           <Col className="mt-lg-5 mt-md-2">
             <div className="w-100 m-auto mt-5">
-              {/* {!image && error && <div class="errorDiv">Error: {error}</div>}
-              {!image && loading && (
-                <div className="spinner-border text-info" role="status"></div>
-              )} */}
-              {!image && !error && !loading && (
-                <div className="row">
-                  <div className="col-md-5 col-12 d-flex-justify-content-end">
-                    <h3>
-                      Hi, I'm Pablita! <br />
-                      I'm here to help
-                    </h3>
-                    <p className="mt-4 fs-5">
-                      Click on a non-human friend on the right to see how they
-                      see! And if you need me back just click on my button!
-                    </p>
-                  </div>
-                  <div className="col d-flex-justify-content-center">
-                    <img
-                      className="w-100 rounded float-center "
-                      alt="Pablita, the jumping spider"
-                      src={defaultImg}
-                    />
-                  </div>
+              <div className="row">
+                <div className="col-md-5 col-12 d-flex-justify-content-end">
+                  <h3>
+                    Hi, I'm Pablita! <br />
+                    I'm here to help
+                  </h3>
+                  <p className="mt-4 fs-5">
+                    Click on a non-human friend on the right to see how they
+                    see! And if you need me back just click on my button!
+                  </p>
                 </div>
-              )}
-              {/* Code here to render specific animal images upon click of icons */}
-            </div>
-
-            <br />
-          </Col>
-          <Col className="mt-lg-5 col-lg-4 mt-md-3 col-md-12 col-12">
-            <div className="col ">
-              <div className="col mb-3 justify-content-center">
-                <Button
-                  className="choiceBtn mb-2"
-                  variant="transparent"
-                  onClick={handleFilter}
-                  checked={animal === "cat"}
-                  value="cat"
-                >
-                  <h5 className="mb-0">Cat</h5>
-                  <img className="w-25" alt="cat icon" src={catImage} />
-                </Button>
-                <Button
-                  className="choiceBtn mb-2"
-                  variant="transparent"
-                  onClick={handleFilter}
-                  checked={animal === "cow"}
-                  value="cow"
-                >
-                  <h5 className="mb-0">Cow</h5>
-                  <img className="w-25" alt="cow icon" src={cowImage} />
-                </Button>
-                <Button
-                  className="choiceBtn mb-2"
-                  variant="transparent"
-                  onClick={handleFilter}
-                  checked={animal === "whale"}
-                  value="whale"
-                >
-                  <h5 className="mb-0">Whale</h5>
-                  <img className="w-25" alt="whale icon" src={whaleImage} />
-                </Button>
-
-                <Button
-                  className="choiceBtn mb-2"
-                  variant="transparent"
-                  onClick={handleFilter}
-                  checked={animal === "bee"}
-                  value="bee"
-                >
-                  <h5 className="mb-0">Bee</h5>
-                  <img className="w-25" alt="bee icon" src={beeImage} />
-                </Button>
+                <div className="col d-flex-justify-content-center">
+                  <img
+                    className="w-100 rounded float-center "
+                    alt="Pablita, the jumping spider"
+                    src={defaultImg}
+                  />
+                </div>
               </div>
-              <Button
-                className="resetBtn"
-                variant="info"
-                size="lg"
-                onClick={backToDefImg}
-                value="default"
-              >
-                Come back, Pablita!
-              </Button>
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
+
       <ImageSlider />
     </div>
   );

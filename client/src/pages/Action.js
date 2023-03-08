@@ -17,7 +17,7 @@ export default function Action() {
 
   const handleChangeFilter = () => {
     setFilterClass(filterClass);
-    console.log(filterClass); //This isn't running right now...???
+    console.log(filterClass); //Returning null -- at least it's running now!
   };
 
   return (

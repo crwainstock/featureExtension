@@ -18,10 +18,9 @@ export default function FilterNavigation({ changeFilterCB }) {
 
   const handleFilter = (e) => {
     setAnimal(e.target.value);
-    // console.log(e.target);
     changeColor(e.target.value);
     console.log(filterClass); // Seems to be working
-    // changeFilterCB(filterClass); // To send data to parent
+    changeFilterCB(filterClass); // To send data to parent
   };
 
   const changeColor = (animal) => {

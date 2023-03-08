@@ -30,7 +30,7 @@ export default function Action() {
           <div className="col mt-lg-1 mt-md-2">
             <div className="w-100 m-auto mt-3">
               <div className="row">
-                <div className="col-md-5 col-12 mt-5">
+                <div className="col-md-5 col-12 sm-mt-1 lg-mt-5">
                   <h3>
                     Hi, I'm Pablita! <br />
                     I'm here to help

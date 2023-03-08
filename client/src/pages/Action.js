@@ -21,14 +21,16 @@ export default function Action() {
 
   return (
     <div className="actionBG">
-      <div className="container pb-5">
-        <FilterNavigation changeFilterCB={handleChangeFilter} />
-
-        <Row className="pb-5">
-          <Col className="mt-lg-5 mt-md-2">
-            <div className="w-100 m-auto mt-5">
+      <div className="container pb-1">
+        <div className="row pb-5">
+          <FilterNavigation
+            changeFilterCB={handleChangeFilter}
+            className="col"
+          />
+          <div className="col mt-lg-1 mt-md-2">
+            <div className="w-100 m-auto mt-3">
               <div className="row">
-                <div className="col-md-5 col-12 d-flex-justify-content-end">
+                <div className="col-md-5 col-12 mt-5">
                   <h3>
                     Hi, I'm Pablita! <br />
                     I'm here to help
@@ -40,15 +42,15 @@ export default function Action() {
                 </div>
                 <div className="col d-flex-justify-content-center">
                   <img
-                    className="w-100 rounded float-center "
+                    className="w-75 rounded float-center "
                     alt="Pablita, the jumping spider"
                     src={defaultImg}
                   />
                 </div>
               </div>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </div>
 
       <ImageSlider filterClass={filterClass} />

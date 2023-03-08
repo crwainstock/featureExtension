@@ -41,7 +41,7 @@ export default function FilterNavigation() {
   return (
     <div className="col-md-12 col-12">
       <div className="row ">
-        <div className="row mb-3 justify-content-center">
+        <div className="row mb-3 justify-content-center offset-md-col-3">
           <Button
             className="col choiceBtn mb-2"
             variant="transparent"

@@ -10,11 +10,11 @@ import Button from "react-bootstrap/Button";
 export default function FilterNavigation() {
   const [animal, setAnimal] = useState(null);
   const [filterClass, setFilterClass] = useState(null);
-  const [image, setImage] = useState(null);
+  //   const [image, setImage] = useState(null);
 
-  const backToDefImg = () => {
-    setImage(null);
-  };
+  //   const backToDefImg = () => {
+  //     setImage(null);
+  //   };
 
   const handleFilter = (e) => {
     setAnimal(e.target.value);
@@ -41,9 +41,9 @@ export default function FilterNavigation() {
   return (
     <div className="col-md-12 col-12">
       <div className="row ">
-        <div className="row mb-3 justify-content-center offset-md-col-3">
+        <div className="row mt-5 mb-3 justify-content-center border rounded border-3">
           <Button
-            className="col choiceBtn mb-2"
+            className="col mb-2"
             variant="transparent"
             onClick={handleFilter}
             checked={animal === "cat"}
@@ -53,7 +53,7 @@ export default function FilterNavigation() {
             <img className="w-25" alt="cat icon" src={catImage} />
           </Button>
           <Button
-            className="col choiceBtn mb-2"
+            className="col mb-2"
             variant="transparent"
             onClick={handleFilter}
             checked={animal === "cow"}
@@ -63,7 +63,7 @@ export default function FilterNavigation() {
             <img className="w-25" alt="cow icon" src={cowImage} />
           </Button>
           <Button
-            className="col choiceBtn mb-2"
+            className="col mb-2"
             variant="transparent"
             onClick={handleFilter}
             checked={animal === "whale"}
@@ -74,7 +74,7 @@ export default function FilterNavigation() {
           </Button>
 
           <Button
-            className="col choiceBtn mb-2"
+            className="col mb-2"
             variant="transparent"
             onClick={handleFilter}
             checked={animal === "bee"}
@@ -84,7 +84,7 @@ export default function FilterNavigation() {
             <img className="w-25" alt="bee icon" src={beeImage} />
           </Button>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <Button
             className="col resetBtn"
             variant="info"
@@ -94,7 +94,7 @@ export default function FilterNavigation() {
           >
             Come back, Pablita!
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

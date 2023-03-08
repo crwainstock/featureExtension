@@ -15,14 +15,15 @@ export default function ImageSlider() {
   //Function to link clicking animal on Action page to animal here to render slider
 
   return (
-    <div className="container">
+    <div className="container mb-4">
       <h3>Image slider goes here</h3>
       <ReactCompareSlider
-        className="d-flex-justify-content-center"
+        className="d-flex-justify-content-center rounded"
         itemOne={<ReactCompareSliderImage src={bee} alt="human" />}
         itemTwo={<ReactCompareSliderImage src={human} alt="bee" />}
-        style={{ width: "100%", height: "75vh" }}
+        style={{ width: "100%", height: "100vh" }}
       />
+      <br />
     </div>
   );
 }

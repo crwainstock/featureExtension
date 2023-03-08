@@ -12,15 +12,15 @@ import human from "../images/animalVision/human.png";
 import whale from "../images/animalVision/whale.png";
 
 export default function ImageSlider({ filterClass }) {
-  let itemOneSrc = { filterClass };
+  let itemTwoSrc = `../images/animalVision/${filterClass}.png`;
   return (
     <div className="container mb-4">
       {/* <h3>Image slider goes here</h3> */}
       {filterClass ? (
         <ReactCompareSlider
           className="d-flex-justify-content-center rounded"
-          itemOne={<ReactCompareSliderImage src={itemOneSrc} alt="human" />}
-          itemTwo={<ReactCompareSliderImage src={human} alt="bee" />}
+          itemOne={<ReactCompareSliderImage src={human} alt="human" />}
+          itemTwo={<ReactCompareSliderImage src={itemTwoSrc} alt="bee" />}
           style={{ width: "100%", height: "75vh" }}
         />
       ) : null}

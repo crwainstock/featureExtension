@@ -2,22 +2,16 @@ import React, { useState } from "react";
 import "./action.css";
 import ImageSlider from "../components/ImageSlider";
 
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
 import defaultImg from "../images/spider_eyes.jpg";
 import FilterNavigation from "../components/FilterNavigation";
 
-export default function Action() {
-  // const [animal, setAnimal] = useState(null);
-  // const [image, setImage] = useState(null);
+export default function Action({ filterClassFromChild }) {
   const [filterClass, setFilterClass] = useState(null); //Need to send this to ImageSlider component to render appropriate slider
-  // const [error, setError] = useState("");
-  // const [loading, setLoading] = useState(false);
 
-  const handleChangeFilter = () => {
-    setFilterClass(filterClass);
-    console.log(filterClass); //Returning null -- at least it's running now!
+  const handleChangeFilter = (filterClassFromChild) => {
+    console.log(filterClassFromChild); //Returning undefined
+    setFilterClass(filterClassFromChild);
+    console.log(filterClass); //Returning undefined -- at least it's running now!
   };
 
   return (

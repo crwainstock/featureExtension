@@ -13,18 +13,12 @@ import cowImage from "../images/icons/cow.png";
 import whaleImage from "../images/icons/whale.png";
 import beeImage from "../images/icons/bee.png";
 
-import bee from "../images/animalVision/bee.png";
-import cat from "../images/animalVision/cat.png";
-import cow from "../images/animalVision/cow.png";
-import human from "../images/animalVision/human.png";
-import whale from "../images/animalVision/whale.png";
-
 export default function Action() {
   const [animal, setAnimal] = useState(null);
-  const [image, setImage] = useState(null); //
+  const [image, setImage] = useState(null);
+  const [filterClass, setFilterClass] = useState(null); //Need to send this to ImageSlider component to render appropriate slider
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [filterClass, setFilterClass] = useState(null);
 
   const backToDefImg = () => {
     setImage(null);

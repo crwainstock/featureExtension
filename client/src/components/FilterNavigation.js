@@ -26,16 +26,16 @@ export default function FilterNavigation({ changeFilterCB }) {
 
   const changeColor = (animal) => {
     if (animal === "cat") {
-      setFilterClass("catFilter");
+      setFilterClass("cat");
     }
     if (animal === "cow") {
-      setFilterClass("cowFilter");
+      setFilterClass("cow");
     }
     if (animal === "whale") {
-      setFilterClass("whaleFilter");
+      setFilterClass("whale");
     }
     if (animal === "bee") {
-      setFilterClass("beeFilter");
+      setFilterClass("bee");
     }
   };
 

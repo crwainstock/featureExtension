@@ -15,13 +15,15 @@ export default function Action() {
   // const [error, setError] = useState("");
   // const [loading, setLoading] = useState(false);
 
+  const handleChangeFilter = () => {
+    setFilterClass(filterClass);
+  };
+
   return (
     <div className="actionBG">
       <div className="container pb-5">
-        <FilterNavigation />
-        {/* Not sure if this CB is right here... 
-        changeFilterCB={setFilterClass(filterClass)}
-        */}
+        <FilterNavigation changeFilterCB={handleChangeFilter} />
+
         <Row className="pb-5">
           <Col className="mt-lg-5 mt-md-2">
             <div className="w-100 m-auto mt-5">
@@ -49,7 +51,7 @@ export default function Action() {
         </Row>
       </div>
 
-      <ImageSlider />
+      <ImageSlider filterClass={filterClass} />
     </div>
   );
 }

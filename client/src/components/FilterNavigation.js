@@ -43,7 +43,7 @@ export default function FilterNavigation({ changeFilterCB }) {
       <div className="row justify-content-center">
         <div className="button-area row mt-3 mb-3 justify-content-center border rounded border-3">
           <Button
-            className="col mb-2"
+            className="col mb-2 border border-0"
             variant="transparent"
             onClick={handleFilter}
             checked={animal === "cat"}
@@ -53,7 +53,7 @@ export default function FilterNavigation({ changeFilterCB }) {
             <img className="w-25" alt="cat icon" src={catImage} />
           </Button>
           <Button
-            className="col mb-2"
+            className="col mb-2 border border-0"
             variant="transparent"
             onClick={handleFilter}
             checked={animal === "cow"}
@@ -63,7 +63,7 @@ export default function FilterNavigation({ changeFilterCB }) {
             <img className="w-25" alt="cow icon" src={cowImage} />
           </Button>
           <Button
-            className="col mb-2"
+            className="col mb-2 border border-0"
             variant="transparent"
             onClick={handleFilter}
             checked={animal === "whale"}
@@ -74,7 +74,7 @@ export default function FilterNavigation({ changeFilterCB }) {
           </Button>
 
           <Button
-            className="col mb-2"
+            className="col mb-2 border border-0"
             variant="transparent"
             onClick={handleFilter}
             checked={animal === "bee"}

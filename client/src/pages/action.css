@@ -88,11 +88,11 @@
 } */
 
 /*Section for random images*/
-#randomImg {
+/* #randomImg {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
+} */
 
 /* .pixabayLogo {
   width: 1.8vw;
@@ -157,7 +157,7 @@
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px; */
-*/
+/* */
 /* }
 
 @media (min-width: 280px) and (max-width: 374px) {
@@ -221,7 +221,7 @@
 } */
 
 /* FILTERS */
-
+/* 
 .catFilter {
   filter: grayscale(85%) blur(1.5px) opacity(85%);
   -webkit-filter: grayscale(85%) blur(1.5px) opacity(85%);
@@ -240,4 +240,4 @@
 .beeFilter {
   filter: sepia(100%) hue-rotate(190deg) saturate(900%);
   -webkit-filter: sepia(100%) hue-rotate(190deg) saturate(900%);
-}
+} */

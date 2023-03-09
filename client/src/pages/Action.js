@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./action.css";
 import ImageSlider from "../components/ImageSlider";
 
@@ -6,12 +6,17 @@ import defaultImg from "../images/spider_eyes.jpg";
 import FilterNavigation from "../components/FilterNavigation";
 
 export default function Action({ filterClassFromChild }) {
+  const [loading, setLoading] = useState(false);
   const [filterClass, setFilterClass] = useState(null); //Need to send this to ImageSlider component to render appropriate slider
 
-  const handleChangeFilter = (filterClassFromChild) => {
-    console.log(filterClassFromChild); //Returning undefined
-    setFilterClass(filterClassFromChild);
-    console.log(filterClass); //Returning undefined -- at least it's running now!
+  const handleChangeFilter = async (filterClassFromChild) => {
+    setLoading(true);
+    try {
+      await setFilterClass(filterClassFromChild);
+    } catch (err) {
+      console.log(err);
+    }
+    setLoading(false);
   };
 
   return (
@@ -22,6 +27,11 @@ export default function Action({ filterClassFromChild }) {
             changeFilterCB={handleChangeFilter}
             className="col"
           />
+          {loading ? (
+            <div>
+              <h2>Loading...</h2>
+            </div>
+          ) : null}
           <div className="col mt-lg-1 mt-md-2">
             <div className="w-100 m-auto mt-3">
               {!filterClass ? (

@@ -39,8 +39,8 @@ export default function FilterNavigation({ changeFilterCB }) {
   };
 
   return (
-    <div className="col-md-12 col-12">
-      <div className="row ">
+    <div className="col-sm-3 col-md-12 col-12">
+      <div className="row justify-content-center">
         <div className="button-area row mt-3 mb-3 justify-content-center border rounded border-3">
           <Button
             className="col mb-2"

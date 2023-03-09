@@ -12,16 +12,22 @@ import human from "../images/animalVision/human.png";
 import whale from "../images/animalVision/whale.png";
 
 export default function ImageSlider({ filterClass }) {
-  let itemTwoSrc = `../images/animalVision/${filterClass}.png`;
-
+  const images = { cat: cat, whale: whale, bee: bee, cow: cow };
   return (
     <div className="container mb-4">
       <h3>{filterClass}</h3>
+      {/* <img src={cow} /> */}
+      {/* The image above renders...why aren't paths working? */}
       {filterClass ? (
         <ReactCompareSlider
           className="d-flex-justify-content-center rounded"
           itemOne={<ReactCompareSliderImage src={human} alt="human" />}
-          itemTwo={<ReactCompareSliderImage src={itemTwoSrc} alt="non-human" />}
+          itemTwo={
+            <ReactCompareSliderImage
+              src={images[filterClass]}
+              alt="non-human"
+            />
+          }
           style={{ width: "100%", height: "75vh" }}
         />
       ) : null}

@@ -15,9 +15,8 @@ export default function ImageSlider({ filterClass }) {
   const images = { cat: cat, whale: whale, bee: bee, cow: cow };
   return (
     <div className="container mb-4">
-      <h3>{filterClass}</h3>
-      {/* <img src={cow} /> */}
-      {/* The image above renders...why aren't paths working? */}
+      <h3>See like a {filterClass}</h3>
+
       {filterClass ? (
         <ReactCompareSlider
           className="d-flex-justify-content-center rounded"
@@ -33,22 +32,6 @@ export default function ImageSlider({ filterClass }) {
       ) : null}
 
       <br />
-      <p>Whale</p>
-      <ReactCompareSlider
-        className="d-flex-justify-content-center rounded"
-        itemOne={<ReactCompareSliderImage src={human} alt="human" />}
-        itemTwo={<ReactCompareSliderImage src={whale} alt="non-human" />}
-        style={{ width: "100%", height: "75vh" }}
-      />
-      {/* <br />
-      <p>Cat</p>
-      <ReactCompareSlider
-        className="d-flex-justify-content-center rounded"
-        itemOne={<ReactCompareSliderImage src={human} alt="human" />}
-        itemTwo={<ReactCompareSliderImage src={cat} alt="non-human" />}
-        style={{ width: "100%", height: "75vh" }}
-      />
-      <br /> */}
     </div>
   );
 }

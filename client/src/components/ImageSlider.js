@@ -27,14 +27,14 @@ export default function ImageSlider({ filterClass }) {
       ) : null}
 
       <br />
-      {/* <p>Whale</p>
+      <p>Whale</p>
       <ReactCompareSlider
         className="d-flex-justify-content-center rounded"
         itemOne={<ReactCompareSliderImage src={human} alt="human" />}
         itemTwo={<ReactCompareSliderImage src={whale} alt="non-human" />}
         style={{ width: "100%", height: "75vh" }}
       />
-      <br />
+      {/* <br />
       <p>Cat</p>
       <ReactCompareSlider
         className="d-flex-justify-content-center rounded"

@@ -17,7 +17,7 @@ export default function Action({ filterClassFromChild }) {
   return (
     <div className="actionBG">
       <div className="container pb-1">
-        <div className="row pb-5">
+        <div className="row pb-3">
           <FilterNavigation
             changeFilterCB={handleChangeFilter}
             className="col"

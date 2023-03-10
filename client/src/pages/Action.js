@@ -22,7 +22,7 @@ export default function Action({ filterClassFromChild }) {
   return (
     <div className="actionBG">
       <div className="container pb-1">
-        <div className="row pb-3">
+        <div className="row ">
           <FilterNavigation
             changeFilterCB={handleChangeFilter}
             className="col"
@@ -42,8 +42,8 @@ export default function Action({ filterClassFromChild }) {
                       I'm here to help
                     </h3>
                     <p className="mt-4 fs-5">
-                      Click on a non-human friend on the right to see how they
-                      see! And if you need me back just click on my button!
+                      Click on a non-human friend above to see how they see!
+                      Reload this page if you want to see my cute face again.
                     </p>
                   </div>
                   <div className="col d-flex-justify-content-center">

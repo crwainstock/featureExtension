@@ -27,3 +27,22 @@ const changeColor = (animal) => {
 >
   Cat <img className="cat" alt="" src={catImage} />
 </Button>;
+
+//   const [image, setImage] = useState(null);
+
+//   const backToDefImg = () => {
+//     setImage(null);
+//   };
+{
+  /* <div className="row">
+  <Button
+    className="col resetBtn"
+    variant="info"
+    size="lg"
+    onClick={backToDefImg}
+    value="default"
+  >
+    Come back, Pablita!
+  </Button>
+</div>; */
+}

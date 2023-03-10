@@ -10,11 +10,6 @@ import Button from "react-bootstrap/Button";
 export default function FilterNavigation({ changeFilterCB }) {
   const [animal, setAnimal] = useState(null);
   const [filterClass, setFilterClass] = useState(null); //Need to send up to parent to be used in ImageSlider component
-  //   const [image, setImage] = useState(null);
-
-  //   const backToDefImg = () => {
-  //     setImage(null);
-  //   };
 
   const handleFilter = (e) => {
     setAnimal(e.target.value);
@@ -41,7 +36,7 @@ export default function FilterNavigation({ changeFilterCB }) {
   return (
     <div className="col-sm-3 col-md-12 col-12">
       <div className="row justify-content-center">
-        <div className="button-area row mt-3 mb-3 justify-content-center border rounded border-3">
+        <div className="button-area row mt-3 justify-content-center border rounded border-3">
           <Button
             className="col mb-2 border border-0"
             variant="transparent"
@@ -84,17 +79,6 @@ export default function FilterNavigation({ changeFilterCB }) {
             <img className="w-25" alt="bee icon" src={beeImage} />
           </Button>
         </div>
-        {/* <div className="row">
-          <Button
-            className="col resetBtn"
-            variant="info"
-            size="lg"
-            onClick={backToDefImg}
-            value="default"
-          >
-            Come back, Pablita!
-          </Button>
-        </div> */}
       </div>
     </div>
   );

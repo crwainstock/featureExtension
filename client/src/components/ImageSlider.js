@@ -14,8 +14,12 @@ import whale from "../images/animalVision/whale.png";
 export default function ImageSlider({ filterClass }) {
   const images = { cat: cat, whale: whale, bee: bee, cow: cow };
   return (
-    <div className="container mb-4">
-      <h3>See like a {filterClass}</h3>
+    <div className="container">
+      <h3>How does a {filterClass} see?</h3>
+      <p>
+        The image on the left is how a human sees the world. Use the slider to
+        see how a {filterClass} sees it.
+      </p>
 
       {filterClass ? (
         <ReactCompareSlider
@@ -27,7 +31,7 @@ export default function ImageSlider({ filterClass }) {
               alt="non-human"
             />
           }
-          style={{ width: "100%", height: "75vh" }}
+          style={{ width: "100%", height: "40vh" }}
         />
       ) : null}
 

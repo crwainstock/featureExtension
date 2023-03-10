@@ -4,6 +4,7 @@ import catImage from "../images/icons/cat.png";
 import cowImage from "../images/icons/cow.png";
 import whaleImage from "../images/icons/whale.png";
 import beeImage from "../images/icons/bee.png";
+import dogImage from "../images/icons/dog.png";
 
 import Button from "react-bootstrap/Button";
 
@@ -31,6 +32,9 @@ export default function FilterNavigation({ changeFilterCB }) {
     if (animal === "bee") {
       setFilterClass("bee");
     }
+    if (animal === "dog") {
+      setFilterClass("dog");
+    }
   };
 
   return (
@@ -48,26 +52,26 @@ export default function FilterNavigation({ changeFilterCB }) {
         <div className="row">
           <li className="col w-75 m-auto justify-content-center">
             <Button
-              className="row mb-2 border border-0"
+              className="col mb-2 border border-0"
               variant="transparent"
               onClick={handleFilter}
               checked={animal === "cat"}
               value="cat"
             >
-              <h5 className="col mb-0">Cat</h5>
-              <img className="col w-25" alt="cat icon" src={catImage} />
+              <h5 className="mb-0">Cat</h5>
+              <img className="w-25" alt="cat icon" src={catImage} />
             </Button>
           </li>
           <li className="col w-75 m-auto justify-content-center">
             <Button
-              className="row mb-2 border border-0"
+              className="col mb-2 border border-0"
               variant="transparent"
               onClick={handleFilter}
               checked={animal === "cow"}
               value="cow"
             >
-              <h5 className="col mb-0">Cow</h5>
-              <img className="col w-25" alt="cow icon" src={cowImage} />
+              <h5 className="mb-0">Cow</h5>
+              <img className="w-25" alt="cow icon" src={cowImage} />
             </Button>
           </li>
 
@@ -93,6 +97,18 @@ export default function FilterNavigation({ changeFilterCB }) {
             >
               <h5 className="mb-0">Bee</h5>
               <img className="w-25" alt="bee icon" src={beeImage} />
+            </Button>
+          </li>
+          <li className="col w-75 m-auto justify-content-center">
+            <Button
+              className="col mb-2 border border-0"
+              variant="transparent"
+              onClick={handleFilter}
+              checked={animal === "dog"}
+              value="dog"
+            >
+              <h5 className="mb-0">Dog</h5>
+              <img className="w-25" alt="dog icon" src={dogImage} />
             </Button>
           </li>
         </div>

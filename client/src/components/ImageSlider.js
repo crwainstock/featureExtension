@@ -30,7 +30,7 @@ export default function ImageSlider({ filterClass }) {
               alt="non-human"
             />
           }
-          style={{ width: "100%", height: "40vh" }}
+          style={{ width: "100%", height: "60vh" }}
         />
       ) : null}
 

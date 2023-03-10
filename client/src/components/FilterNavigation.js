@@ -35,7 +35,70 @@ export default function FilterNavigation({ changeFilterCB }) {
 
   return (
     <div className="col-sm-3 col-md-12 col-12">
-      <div className="row justify-content-center">
+      <div class="dropdown-center">
+        <button
+          className="btn btn-danger dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Choose an animal
+        </button>
+        <ul className="dropdown-menu">
+          <li className="row w-75 m-auto justify-content-center">
+            <Button
+              className="row mb-2 border border-0"
+              variant="transparent"
+              onClick={handleFilter}
+              checked={animal === "cat"}
+              value="cat"
+            >
+              <h5 className="col mb-0">Cat</h5>
+              <img className="col w-25" alt="cat icon" src={catImage} />
+            </Button>
+          </li>
+          <li className="row w-75 m-auto justify-content-center">
+            <Button
+              className="row mb-2 border border-0"
+              variant="transparent"
+              onClick={handleFilter}
+              checked={animal === "cow"}
+              value="cow"
+            >
+              <h5 className="col mb-0">Cow</h5>
+              <img className="col w-25" alt="cow icon" src={cowImage} />
+            </Button>
+          </li>
+          <li className="row w-75 m-auto justify-content-center">
+            <Button
+              className="col mb-2 border border-0"
+              variant="transparent"
+              onClick={handleFilter}
+              checked={animal === "whale"}
+              value="whale"
+            >
+              <h5 className="mb-0">Whale</h5>
+              <img className="w-25" alt="whale icon" src={whaleImage} />
+            </Button>
+          </li>
+          <li className="row w-75 m-auto justify-content-center">
+            <Button
+              className="col mb-2 border border-0"
+              variant="transparent"
+              onClick={handleFilter}
+              checked={animal === "bee"}
+              value="bee"
+            >
+              <h5 className="mb-0">Bee</h5>
+              <img className="w-25" alt="bee icon" src={beeImage} />
+            </Button>
+          </li>
+        </ul>
+      </div>
+
+      {/* Old animal nav bar */}
+
+      {/* <div className="row justify-content-center">
         <div className="button-area row mt-3 justify-content-center border rounded border-3">
           <Button
             className="col mb-2 border border-0"
@@ -79,7 +142,7 @@ export default function FilterNavigation({ changeFilterCB }) {
             <img className="w-25" alt="bee icon" src={beeImage} />
           </Button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -11,35 +11,42 @@ import Button from "react-bootstrap/Button";
 
 export default function FilterNavigation({ changeFilterCB }) {
   const [animal, setAnimal] = useState(null);
-  const [filterClass, setFilterClass] = useState(null); //Need to send up to parent to be used in ImageSlider component
+  // const [filterClass, setFilterClass] = useState(null); //Need to send up to parent to be used in ImageSlider component
 
   const handleFilter = (e) => {
-    setAnimal(e.target.value);
-    changeColor(e.target.value);
-    console.log(filterClass); // Seems to be working
-    changeFilterCB(filterClass); // To send data to parent
+    setAnimal(e.currentTarget.value);
+    // setFilterClass(e.currentTarget.value); //*** ANNA *** probably this is not needed anymore
+    //console.log(filterClass); // *** ANNA *** This will not work that fast, it is updated in the next render
+    changeFilterCB(e.currentTarget.value); // To send data to parent
   };
 
-  const changeColor = (animal) => {
-    if (animal === "cat") {
-      setFilterClass("cat");
-    }
-    if (animal === "cow") {
-      setFilterClass("cow");
-    }
-    if (animal === "whale") {
-      setFilterClass("whale");
-    }
-    if (animal === "bee") {
-      setFilterClass("bee");
-    }
-    if (animal === "dog") {
-      setFilterClass("dog");
-    }
-    if (animal === "snail") {
-      setFilterClass("snail");
-    }
-  };
+  // const handleFilter = (e) => {
+  //   setAnimal(e.target.value);
+  //   changeColor(e.target.value);
+  //   console.log(filterClass); // Seems to be working
+  //   changeFilterCB(filterClass); // To send data to parent
+  // };
+
+  // const changeColor = (animal) => {
+  //   if (animal === "cat") {
+  //     setFilterClass("cat");
+  //   }
+  //   if (animal === "cow") {
+  //     setFilterClass("cow");
+  //   }
+  //   if (animal === "whale") {
+  //     setFilterClass("whale");
+  //   }
+  //   if (animal === "bee") {
+  //     setFilterClass("bee");
+  //   }
+  //   if (animal === "dog") {
+  //     setFilterClass("dog");
+  //   }
+  //   if (animal === "snail") {
+  //     setFilterClass("snail");
+  //   }
+  // };
 
   return (
     <div className="dropdown-center mt-4">

@@ -46,7 +46,7 @@ export default function Action({ filterClassFromChild }) {
                       Reload this page if you want to see my cute face again.
                     </p>
                   </div>
-                  <div className="col d-flex-justify-content-center">
+                  <div className="col mb-4 d-flex-justify-content-center">
                     <img
                       className="w-75 rounded float-center "
                       alt="Pablita, the jumping spider"

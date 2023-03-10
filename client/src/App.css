@@ -34,6 +34,10 @@ header a {
 footer {
   background-color: #efe9d5;
 }
+
+footer h6 {
+  color: #b393d3;
+}
 /* LOOK */
 .button-area {
   background-color: #efe9d5;

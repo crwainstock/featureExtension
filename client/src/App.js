@@ -10,21 +10,6 @@ import ErrorPage from "./pages/ErrorPage";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
-  // 	useEffect(() => {
-  // 		getHumImgs();
-  // 	}, []);
-
-  // 	let [humImgs, setHumImgs] = useState([]);
-
-  // let [newImage, setNewImage] = useState({
-  // 	name
-  // })
-
-  // const getHumImgs = async () => {
-  // 	fetch('/humans')
-
-  // }
-
   return (
     <div className="App">
       <Routes>

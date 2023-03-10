@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <div className="site-wrapper">
+    <div>
       <Header />
       <main>
         <Outlet />

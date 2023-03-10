@@ -20,7 +20,7 @@ con.connect(function (err) {
 
 	//modify the SQL line to create my own tables
 	let sql =
-		'DROP TABLE if exists humanImages; DROP TABLE if exists animalImages; CREATE TABLE humanImages(humID INT NOT NULL AUTO_INCREMENT, name VARCHAR(40) not null, src VARCHAR(100) not null, PRIMARY KEY (humID)); CREATE TABLE animalImages(animID INT NOT NULL AUTO_INCREMENT, name VARCHAR(40) not null, src VARCHAR(100) not null, PRIMARY KEY (animID),  FOREIGN KEY (HumID) REFERENCES humanImages(HumID));';
+		'DROP TABLE if exists humanImages; DROP TABLE if exists animalImages; CREATE TABLE humanImages(humID INT NOT NULL AUTO_INCREMENT, name VARCHAR(40) not null, src VARCHAR(100) not null, PRIMARY KEY (humID)); CREATE TABLE animalImages(animID INT NOT NULL AUTO_INCREMENT, name VARCHAR(40) not null, src VARCHAR(100) not null, humID INT NOT NULL, PRIMARY KEY (animID),  FOREIGN KEY (humID) REFERENCES humanImages(humID));';
 	con.query(sql, function (err, result) {
 		if (err) throw err;
 		console.log(

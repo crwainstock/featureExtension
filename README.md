@@ -1,77 +1,32 @@
 # AniColors App
 
-## Project's Description
+## Introduction
 
-Hi!
+The original aim of this App is to provide the user an easy way to see how other animals see the world. The app was originally built by a classmate using React and React-Bootstrap for styling, and I worked with the app as a part of a feature extension project for the CodeOp bootcamp.
 
-The original aim of this App is to provide the user an easy way to see how other animals see the world.
-Its long-shot/utopic objective would be to directly manipulate devices' camera filters in order to immediately filter camera view and let the user see through their device what another (non-human) being would see.
-
-But for now we have this:
-
-The full-stack App was supposed to let the user choose among a couple of non-human animals (NHA) and to compare between human and non-human vision. That is, the App was supposed to contain a database with some pre-loaded images - a specific pair of images for each NHA (one image of the pair showing the human vision and the other the non-human vision) - and, when the user chose the NHA, that specific pair of images would be get and loaded to the frontend.
-
-Because of a series of unfortunate events, I chose to stick to front-end only, so the structure of the project had to change, giving me the opportunity to play with CSS filters. What the App does know, then, is loading a random image and give the user a choice of four NHAs. Clicking on a NHA, the image will be filtered, (slightly) imitating their particular vision.
-
-[Note] Since I started with a full-stack, you will find instructions about DB tables already written in model/database.js.
+The project includes file structure to integrate Node, Express, and MySQL database, but the current version of the project is a front-end app only. These directions are to use the app as it is in the current form, but further development could be made to include the backend elements.
 
 ## Setup
 
-#### Client .env file for API key
+### Dependencies
 
-Log on to Pixabay website <https://pixabay.com> to get your API Key.
+- `cd anicolors` then `cd client` and run npm install. This will install client dependencies (React).
+- Run `npm start` to run the development server.
+- **Note:** The client folder holds everything to do with the front end of the app.
 
-Create `.env` file in project (client) directory and add your Pixabay API Key
+## Code & Functionality Overview
 
-REACT_APP_API_KEY = yourKey
+- This project includes pages and components.
+- `App.js` is where the routes (pages) are defined.
+- Pages include:
 
-### Front-end version
+  - Home "/"
+  - Look "/look"
+    - This page renders the `FilterNavigation` and `ImageSlider` components.
+  - About "/about"
+  - Error "/\*"
 
-Run `npm install` to install packages.
-This will install ReactRouter and ReactBootstrap, too.
-
-Run `npm start` to run the development server.
-
-### Full-stack version
-
-#### Dependencies
-
-Run `npm install` in the project folder to install dependencies related to Express (the server).
-
-`cd client` and run `npm install` install dependencies related to React (the client).
-
-#### Database Prep
-
-Create `.env` file in project directory and add
-
-```
-DB_HOST=localhost
-DB_USER=root
-DB_NAME=images
-DB_PASS=YOUR_PASSWORD
-```
-
-(replace `YOUR_PASSWORD` with your actual password)
-
-Type `mysql -u root -p` to access the MySQL CLI using your password.
-
-In the MySQL CLI, type `create database images;` to create a database in MySQL.
-
-Run the following in the MySQL CLI: `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'YOUR_PASSWORD';` (replace `YOUR_PASSWORD` with your actual password)
-
-Run `node model/database.js` in your **TERMINAL**, in the **project** folder (not your MySQL CLI! Open a new terminal window for this). This will create a table called 'items' in your database.
-
-#### Run Your Development Servers
-
-- Run `npm start` in project directory to start the Express server on port 5000
-
-- `cd client` and run `npm start` to start client server in development mode with hot reloading in port 3000.
-
-## Technologies I used
-
-I used React, which is the JS library I am using the most at the moment.
-I also used React Routes, which gives me the comfort of developing the project in a SPA.
-For the CSS I used Bootstrap 5 and React Bootstrap importing specific Bootstrap components adapted for React.
+- This project uses a `Layout` route to allow the `Header` and `Footer` to be rendered on each page.
 
 ## How it works
 

@@ -58,6 +58,18 @@ footer h6 {
   color: black;
 }
 
+.dropdown {
+  font-size: larger;
+  background-color: #553c9a;
+  border-color: #b393d3;
+  color: #efe9d5;
+}
+
+.dropdown:hover {
+  background-color: #b393d3;
+  border-color: #b393d3;
+}
+
 /* HOME.CSS */
 
 /* Background image */

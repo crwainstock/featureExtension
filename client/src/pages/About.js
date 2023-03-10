@@ -39,7 +39,6 @@ function About() {
       <div className="mt-5">
         <h2>Credits</h2>
         <h4 className="mt-4">Pictures</h4>
-
         <p>
           <span>Pablita the jumping spider's picture come from </span>
           <a href="https://www.livescience.com/62513-photos-amazing-animal-eyes.html">
@@ -47,7 +46,6 @@ function About() {
           </a>
           <span> (Image credit: Shutterstock)</span>
         </p>
-
         <h4 className="mt-2">Icons</h4>
         <p>
           All the icons come from{" "}
@@ -66,7 +64,6 @@ function About() {
           Bee icons created by Freepik - Flaticon
         </a>
         <br />
-
         <span>Cow icon: </span>
         <a href="https://www.flaticon.com/free-icons/cow" title="cow icons">
           Cow icons created by Flat Icons - Flaticon
@@ -79,6 +76,17 @@ function About() {
         >
           Animal icons created by Freepik - Flaticon
         </a>
+        <br />
+        <span>Snail icon: </span>
+        <a href="https://www.flaticon.com/free-icons/snail" title="snail icons">
+          Snail icons created by Flat Icons - Flaticon
+        </a>
+        <br />
+        <span>Dog icon: </span>
+        <a href="https://www.flaticon.com/free-icons/dog" title="dog icons">
+          Dog icons created by Flat Icons - Flaticon
+        </a>
+        <br />
       </div>
       {/* <p><span>Pablita's speech bubble was created with the help of	</span>
 

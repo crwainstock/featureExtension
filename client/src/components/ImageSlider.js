@@ -9,12 +9,13 @@ import cat from "../images/animalVision/cat.png";
 import cow from "../images/animalVision/cow.png";
 import human from "../images/animalVision/human.png";
 import whale from "../images/animalVision/whale.png";
+import dog from "../images/animalVision/dog.png";
 
 export default function ImageSlider({ filterClass }) {
-  const images = { cat: cat, whale: whale, bee: bee, cow: cow };
+  const images = { cat: cat, whale: whale, bee: bee, cow: cow, dog: dog };
   return (
     <div className="container">
-      <h3>How does a {filterClass} see?</h3>
+      <h3>What does a {filterClass} see?</h3>
       <p>
         The image on the left is how a human sees the world. Use the slider to
         see how a {filterClass} sees it.
@@ -30,7 +31,7 @@ export default function ImageSlider({ filterClass }) {
               alt="non-human"
             />
           }
-          style={{ width: "100%", height: "40vh" }}
+          style={{ width: "100%", height: "60vh" }}
         />
       ) : null}
 

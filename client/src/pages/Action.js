@@ -42,8 +42,9 @@ export default function Action({ filterClassFromChild }) {
                       I'm here to help
                     </h3>
                     <p className="mt-4 fs-5">
-                      Click on a non-human friend above to see how they see!
-                      Reload this page if you want to see my cute face again.
+                      Click on the dropdown menu to choose a non-human friend
+                      and see how they see! Reload this page if you want to see
+                      my cute face again.
                     </p>
                   </div>
                   <div className="col mb-4 d-flex-justify-content-center">

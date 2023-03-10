@@ -1,7 +1,7 @@
 function About() {
   return (
-    <div className="container mt-5">
-      <div className="biblioDiv">
+    <div className="container mt-5 mb-5">
+      <div>
         <h2>Bibliography</h2>
         <h6>
           If you want to know more about other worlds and who can see them:
@@ -47,7 +47,7 @@ function About() {
           </a>
           <span> (Image credit: Shutterstock)</span>
         </p>
-        {/* APIs!!!! */}
+
         <h4 className="mt-2">Icons</h4>
         <p>
           All the icons come from{" "}

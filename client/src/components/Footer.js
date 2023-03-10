@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="mt-auto">
       <footer className="pt-4">
         <h6 className="mb-0">AniColors</h6>
         <p className="pb-4 mb-0">Developed by Tati & Crystal</p>

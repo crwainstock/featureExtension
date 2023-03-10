@@ -43,6 +43,21 @@ footer h6 {
   background-color: #efe9d5;
 }
 
+.actionBG {
+  background-image: linear-gradient(
+      rgba(241, 239, 239, 0.9),
+      rgba(241, 239, 239, 0.7)
+    ),
+    url("./images/peacockfeather.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* height: 100vh; */
+  min-width: auto;
+  text-align: center;
+  color: black;
+}
+
 /* HOME.CSS */
 
 /* Background image */
@@ -90,12 +105,12 @@ footer h6 {
 } */
 
 /* ERRORPAGE.CSS */
-.errorDiv {
-  padding-top: 35vh;
-  color: red;
-}
 
 .homeBtn {
-  color: red;
-  border-color: red;
+  color: #553c9a;
+  border-color: #553c9a;
+}
+
+.homeBtn:hover {
+  background-color: #b393d3;
 }

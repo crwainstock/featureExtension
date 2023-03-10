@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./action.css";
+
 import ImageSlider from "../components/ImageSlider";
 
 import defaultImg from "../images/spider_eyes.jpg";

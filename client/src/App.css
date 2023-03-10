@@ -64,6 +64,14 @@ footer h6 {
   border-color: #b393d3;
   color: #efe9d5;
 }
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: #b393d3;
+  border-color: #b393d3;
+}
 
 .dropdown:hover {
   background-color: #b393d3;

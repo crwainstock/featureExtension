@@ -5,6 +5,7 @@ import cowImage from "../images/icons/cow.png";
 import whaleImage from "../images/icons/whale.png";
 import beeImage from "../images/icons/bee.png";
 import dogImage from "../images/icons/dog.png";
+import snailImage from "../images/icons/snail.png";
 
 import Button from "react-bootstrap/Button";
 
@@ -34,6 +35,9 @@ export default function FilterNavigation({ changeFilterCB }) {
     }
     if (animal === "dog") {
       setFilterClass("dog");
+    }
+    if (animal === "snail") {
+      setFilterClass("snail");
     }
   };
 
@@ -109,6 +113,18 @@ export default function FilterNavigation({ changeFilterCB }) {
             >
               <h5 className="mb-0">Dog</h5>
               <img className="w-25" alt="dog icon" src={dogImage} />
+            </Button>
+          </li>
+          <li className="col w-75 m-auto justify-content-center">
+            <Button
+              className="col mb-2 border border-0"
+              variant="transparent"
+              onClick={handleFilter}
+              checked={animal === "snail"}
+              value="snail"
+            >
+              <h5 className="mb-0">Snail</h5>
+              <img className="w-25" alt="snail icon" src={snailImage} />
             </Button>
           </li>
         </div>

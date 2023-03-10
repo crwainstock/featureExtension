@@ -10,9 +10,17 @@ import cow from "../images/animalVision/cow.png";
 import human from "../images/animalVision/human.png";
 import whale from "../images/animalVision/whale.png";
 import dog from "../images/animalVision/dog.png";
+import snail from "../images/animalVision/snail.png";
 
 export default function ImageSlider({ filterClass }) {
-  const images = { cat: cat, whale: whale, bee: bee, cow: cow, dog: dog };
+  const images = {
+    cat: cat,
+    whale: whale,
+    bee: bee,
+    cow: cow,
+    dog: dog,
+    snail: snail,
+  };
   return (
     <div className="container">
       <h3>What does a {filterClass} see?</h3>

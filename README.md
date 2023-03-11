@@ -33,20 +33,10 @@ The project includes file structure to integrate Node, Express, and MySQL databa
 - [A video demo of the app can be viewed here.](https://drive.google.com/file/d/1KMF1_emOH6ttxVfjs7v5hmWwxFp8F9AJ/view?usp=share_link)
 - [Slides from a demo presentation are available here.](https://docs.google.com/presentation/d/1kX6VLbRHNCLnboFzngUIYEdDYTfXfTsqO73Mgf9BR58/edit?usp=share_link)
 
-## Next features
+## Looking Ahead
 
-Add more filters
-
-On the back-end front:
-
-- Create an 'images' DB with two tables: NH and human images
-- Tables will contain pairs of images that have already been processed to compare human and NH vision
-- Elaborate on that DB
-
-## Resources
-
-[Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-[React Router](https://reactrouter.com/en/main)
+- Additional filters could be added to the app.
+- An external API could be used to generate animal profiles with more information about the specific animals and their sight.
 
 ## Notes
 

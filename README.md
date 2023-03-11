@@ -21,52 +21,17 @@ The project includes file structure to integrate Node, Express, and MySQL databa
 - Pages include:
 
   - Home "/"
-  - Look "/look"
+  - Action "/look"
     - This page renders the `FilterNavigation` and `ImageSlider` components.
   - About "/about"
   - Error "/\*"
 
 - This project uses a `Layout` route to allow the `Header` and `Footer` to be rendered on each page.
 
-## How it works
+## App Demo
 
-The SPA has four routes: Home, Action, About, and ErrorPage (for wrong URLs).
-Home, Action and About will be seen by the user as three actual different pages. They can be accessed through their links in the navbar (Action 'LOOK' in the navbar).
-
-[Important](Home, About and ErrorPage CSS are inside App.css. Action.js has its own dedicated .css file.)
-
-The whole action happens (not surprisingly) in the Action route.
-When the page loads, the user will see a default image (Pablita the jumpong spider) with an instruction message and a box containing four non-human animal choices and a reset button.
-
-By clicking on the image, fetchImage function is activated and random images are uploaded by fetching an API from Pixabay. The API queries includes specific categories ('nature', 'animals') and an image type ('photos').
-
-By clicking on each animal choice:
-
-- handleFilter function assigns the NHA value and calls changeColor function
-- changeColor function sets a specific CSS class
-- each CSS class contains a combination of filters which imitates that specific NHA vision and will modify the image accordingly
-
-Reset button ('Come back Pablita!') recalls the starting default image with its instruction message.
-
-## Problems and blockers
-
-The first huge blocker, which I have not overcome yet, was building the back end.
-
-I had to spend some time and ask for help to make some event handlers work.
-
-The last big blocker was ensuring a responsive frontend behaviour for different devices. I would say it's still a work-in-progress.
-
-## Need to do and improve
-
-Accessibility.
-
-Front end styling, particularly responsive design.
-
-Make box appear together with random images.
-
-Normalize .css files (all CSS in just one App.css or a .css for each .js)
-
-Maybe find a better title for the project.
+- [A video demo of the app can be viewed here.](https://drive.google.com/file/d/1KMF1_emOH6ttxVfjs7v5hmWwxFp8F9AJ/view?usp=share_link)
+- [Slides from a demo presentation are available here.](https://docs.google.com/presentation/d/1kX6VLbRHNCLnboFzngUIYEdDYTfXfTsqO73Mgf9BR58/edit?usp=share_link)
 
 ## Next features
 
@@ -81,11 +46,7 @@ On the back-end front:
 ## Resources
 
 [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-[React Bootstrap](https://react-bootstrap.netlify.app/)
 [React Router](https://reactrouter.com/en/main)
-[Pixabay API](https://pixabay.com/service/about/api/)
-[Speechbubble - original code](https://codingislove.com/css-speech-bubbles/)
-[Inspiration for filters](https://linuxhint.com/change-color-image-blue-css/)
 
 ## Notes
 
